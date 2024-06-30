@@ -38,7 +38,7 @@ function checkWin(event){
     boardArr[event.target.id]=event.target.innerText;
     
     console.log(boardArr);
-    for(let i=0; i<9 ; i+=3){
+    for(let i=0; i<7 ; i+=3){
         if (boardArr[i] ==='X' && boardArr[i+1] ==='X' && boardArr[i+2] ==='X' )
             message.innerText="X Won";
                 if (boardArr[i] ==='O' && boardArr[i+1] ==='O' && boardArr[i+2] ==='O' )
